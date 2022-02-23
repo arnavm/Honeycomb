@@ -50,7 +50,7 @@ const start = () => {
             setUpWithWord(urlParams.get("pangram").toUpperCase());
         }
     } else {
-        fetch("sevenletterwords.txt").then((response) => {
+        fetch("med_approved_seven.txt").then((response) => {
             return response.text().then((file) => {
                 const lines = file.split(/\n/g);
                 const count = (lines || []).length;
@@ -65,7 +65,7 @@ const start = () => {
         });
     }
 
-    fetch("dictionary.txt").then((response) => {
+    fetch("med_approved.txt").then((response) => {
         return response.text().then((file) => {
             dictionary = file.split(/\r\n/g);
             if (urlParams.has("pangram")) {
@@ -176,7 +176,7 @@ const enter = () => {
         }
         if (isValid && !word.includes(middleLetter)) {
             isValid = false;
-            incorrectWord("Missing centre letter");
+            incorrectWord("Missing center letter");
         }
         if (isValid && !dictionary.includes(word.toLowerCase())) {
             isValid = false;
