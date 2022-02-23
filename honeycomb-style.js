@@ -69,11 +69,11 @@ body {
 }
 
 .valid {
-    color: #e7ad00;
+    color: #3257a7;
 }
 
 .invalid {
-    color: #fffbee;
+    color: #db3f4c;
 }
 
 #left #entry #entryContent::after {
@@ -83,7 +83,7 @@ body {
     right: 0;
     width: 2px;
     height: 1.25em;
-    background-color: #e7ad00;
+    background-color: #e7ad00;//#3257a7 
     -webkit-animation: 1000ms blink step-end infinite;
     animation: 1000ms blink step-end infinite;
 }
@@ -92,8 +92,6 @@ body {
     animation: 1000ms shake step-end;
 }
 
-#gridContainer {
-    margin: auto;
     overflow: visible;
     max-width: 550px;
 }
@@ -144,7 +142,7 @@ body {
 }
 
 #grid li .central-hexagon {
-    background: #fdbf00;
+    background: #3257a7;
     cursor: pointer;
 }
 
